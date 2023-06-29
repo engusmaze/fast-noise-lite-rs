@@ -2,14 +2,14 @@
 name = "fast-noise-lite-rs"
 version = "0.8.0"
 edition = "2021"
+authors = ["EngusMaze"]
+description = "FastNoise Lite written in rust"
+tags = ["fastnoise", "lite", "simplex", "perlin", "noise", "fbm", "hash"]
 repository = "https://github.com/engusmaze/fast-noise-lite-rs"
 homepage = "https://github.com/engusmaze/fast-noise-lite-rs"
-authors = ["EngusMaze"]
 license = "Apache-2.0 OR MIT"
-exclude = ["*.png"]
-description = "FastNoise Lite written in rust"
 readme = "README.md"
-tags = ["fastnoise", "lite", "simplex", "perlin", "noise", "fbm", "hash"]
+exclude = ["*.png"]
 
 [dev-dependencies]
-image = "0.24.3"
+image = { version = "0.24.6", default-features = false, features = ["png"] }
